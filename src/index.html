@@ -13,7 +13,7 @@
         </h1>
         <div class="row border">
             <div class="col border py-3">
-                <input class="form-control" type="text" aria-label="readonly input example" readonly>
+                <input class="form-control" type="text" aria-label="readonly input example" id="display-value" readonly>
             </div>
         </div>
         <div class="row mx-2 my-2 container">
@@ -21,24 +21,28 @@
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                     valtozo+='(';
                     console.log(valtozo);
+                    document.getElementById('display-value').value = valtozo;
                     ">(</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                     valtozo+=')';
                     console.log(valtozo);
+                    document.getElementById('display-value').value = valtozo;
                     ">)</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                     valtozo+='%';
                     console.log(valtozo);
+                    document.getElementById('display-value').value = valtozo;
                     ">%</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                     valtozo='';
                     console.log(valtozo);
+                    document.getElementById('display-value').value = valtozo;
                     ">AC</button>
             </div>
             
@@ -48,24 +52,28 @@
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='7';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">7</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='8';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">8</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                 valtozo+='9';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">9</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                 valtozo+='/';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">÷</button>
             </div>
             
@@ -75,24 +83,28 @@
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='4';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">4</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='5';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">5</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                 valtozo+='6';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">6</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                 valtozo+='*';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">×</button>
             </div>
             
@@ -102,24 +114,28 @@
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='1';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">1</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='2';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">2</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                 valtozo+='3';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">3</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-light w-100 border" onclick="
                 valtozo+='-';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">-</button>
             </div>
             
@@ -129,22 +145,25 @@
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='0';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">0</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn  btn-light w-100 border" onclick="
                 valtozo+='.';
                 console.log(valtozo);
+                document.getElementById('display-value').value = valtozo;
                 ">.</button>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-primary w-100 border" onclick="
                     let eredmeny=eval(valtozo);
-                    alert(eredmeny);
+                    document.getElementById('display-value').value=eredmeny;
                     ">=</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-light w-100 border" onclick="valtozo+='+'">+</button>
+                <button type="button" class="btn btn-light w-100 border" onclick="valtozo+='+'
+                document.getElementById('display-value').value = valtozo;">+</button>
             </div>
             
         </div>
